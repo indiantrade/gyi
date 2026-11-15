@@ -1,155 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Intraday Bulls</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    font-family:'Roboto',Arial,sans-serif;
-    background:#0d0d0d;
-    color:#fff;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
-  }
-  .container{
-    width:100%;
-    max-width:480px;
-    background:#111827;
-    border:2px solid #d4b800;
-    border-radius:clamp(28px,9vw,50px);
-    box-shadow:0 0 18px rgba(212,184,0,.55), inset 0 0 12px rgba(212,184,0,.15);
-    padding:clamp(18px,5vw,30px) clamp(12px,4vw,18px) clamp(24px,6vw,40px);
-  }
-  .name{
-    border:1px solid #6b7280;
-    text-align:center;
-    font-size:clamp(19px,5.6vw,24px);
-    font-weight:500;
-    padding:10px 8px;
-    color:#f3f4f6;
-    word-break:break-word;
-  }
-  .avatar{
-    width:clamp(130px,42vw,175px);
-    height:clamp(130px,42vw,175px);
-    border-radius:50%;
-    border:3px solid #a8c400;
-    margin:clamp(26px,8vw,42px) auto clamp(34px,10vw,60px);
-    overflow:hidden;
-    display:block;
-  }
-  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-  .card{
-    background:#1b2045;
-    border:1px solid #5b6178;
-    box-shadow:0 0 10px rgba(200,200,220,.35);
-    padding:clamp(12px,3.5vw,16px) clamp(10px,3vw,14px);
-    display:flex;
-    align-items:flex-start;
-    gap:clamp(10px,3vw,14px);
-  }
-  .icon{
-    flex:0 0 clamp(46px,13vw,58px);
-    width:clamp(46px,13vw,58px);
-    height:clamp(46px,13vw,58px);
-    border:3px solid #fff;
-    border-radius:50%;
-    display:flex;align-items:center;justify-content:center;
-    font-size:clamp(20px,6vw,26px);
-    margin-top:4px;
-  }
-  .card h3{font-size:clamp(16px,4.8vw,21px);font-weight:700;line-height:1.25;color:#fff}
-  .card p{font-size:clamp(14px,4vw,17px);font-weight:300;color:#c9ccd8;line-height:1.6;margin-top:6px}
-  .btn-wrap{text-align:center;margin:clamp(24px,7vw,36px) 0 clamp(30px,9vw,48px);padding:0 6px}
-  .btn{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    width:100%;
-    max-width:340px;
-    margin:0 auto;
-    background:#0069d9;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    font-size:clamp(17px,5vw,23px);
-    padding:clamp(14px,4vw,18px) 16px;
-    min-height:56px;
-    border:3px dotted #fff;
-    border-radius:14px;
-    box-shadow:0 0 12px rgba(212,184,0,.9);
-    animation:pulse 1.6s infinite;
-    white-space:nowrap;
-  }
-  .btn:active{transform:scale(.97)}
-  .btn svg{width:clamp(24px,7vw,30px);height:clamp(24px,7vw,30px);flex:0 0 auto}
-  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
-  .gap{height:clamp(24px,7vw,40px)}
-  .disclaimer{
-    text-align:center;
-    font-size:clamp(11.5px,3.3vw,13px);
-    line-height:1.65;
-    color:#e5e7eb;
-    margin-top:clamp(20px,6vw,28px);
-    padding:0 4px;
-  }
-  @media (prefers-reduced-motion:reduce){.btn{animation:none}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐆𝐀𝐔𝐓𝐀𝐌 𝐊𝐔𝐌𝐀𝐑 𝐉𝐇𝐀 𝐒𝐓𝐎𝐂𝐊 𝐋𝐄𝐀𝐑𝐍𝐄𝐑𝐒 ❤️💹 | Live Market Education</title>
+    <meta name="description" content="Master Price Action, Chart Structure & Disciplined Risk Management with GAUTAM KUMAR JHA STOCK LEARNERS. Strictly an educational stock market learning community.">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1670021781378963');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1670021781378963&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Fonts: Space Grotesk (Headings), Inter (Body), JetBrains Mono (Technical Tags) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        cyber: {
+                            bg: '#060913',
+                            card: 'rgba(13, 20, 38, 0.72)',
+                            border: 'rgba(16, 185, 129, 0.22)',
+                            emerald: '#10B981',
+                            cyan: '#06B6D4',
+                            text: '#F8FAFC',
+                        }
+                    },
+                    animation: {
+                        'ring-pulse': 'ringPulse 3s infinite ease-in-out',
+                        'shimmer': 'shimmerSweep 2.6s infinite linear',
+                        'candle-float': 'candleFloat 7s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        ringPulse: {
+                            '0%, 100%': { boxShadow: '0 0 0 0 rgba(16, 185, 129, 0.45), 0 0 24px rgba(6, 182, 212, 0.25)' },
+                            '50%': { boxShadow: '0 0 0 6px rgba(16, 185, 129, 0.05), 0 0 32px rgba(6, 182, 212, 0.45)' },
+                        },
+                        shimmerSweep: {
+                            '0%': { transform: 'translateX(-120%) skewX(-20deg)' },
+                            '100%': { transform: 'translateX(220%) skewX(-20deg)' },
+                        },
+                        candleFloat: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-6px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            background-color: #060913;
+            color: #F8FAFC;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Cyber-Terminal Micro Grid */
+        .cyber-grid-bg {
+            background-image:
+                linear-gradient(to right, rgba(6, 182, 212, 0.045) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(16, 185, 129, 0.045) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+        /* Frosted Neo-Glassmorphism */
+        .neo-glass {
+            background: linear-gradient(145deg, rgba(14, 22, 42, 0.82), rgba(8, 13, 26, 0.90));
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .neo-glass-sub {
+            background: rgba(12, 19, 36, 0.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
+<body class="bg-cyber-bg cyber-grid-bg text-cyber-text antialiased selection:bg-emerald-500/30 selection:text-white min-h-[100dvh] w-full flex flex-col justify-between relative overflow-x-hidden">
 
-    <div class="name">Intraday Bulls</div>
+    <!-- Ambient Radial Glows & Animated SVG Candlestick Watermark -->
+    <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[420px] h-[280px] rounded-full bg-emerald-500/15 blur-[95px]"></div>
+        <div class="absolute top-1/3 -right-24 w-[300px] h-[300px] rounded-full bg-cyan-500/10 blur-[100px]"></div>
 
-    <div class="avatar">
-      <img src="https://i.ibb.co/Kxy5sCht/In-Shot-20261112-003926626.jpg" alt="Intraday Bulls">
-    </div>
+        <!-- Subtle Live Candlestick & Moving Average SVG Chart Background -->
+        <svg class="w-full h-full opacity-[0.16] animate-candle-float" viewBox="0 0 420 760" fill="none" preserveAspectRatio="xMidYMid slice">
+            <!-- Horizontal Terminal Price Lines -->
+            <line x1="0" y1="140" x2="420" y2="140" stroke="#06B6D4" stroke-width="0.6" stroke-dasharray="4 6"/>
+            <line x1="0" y1="310" x2="420" y2="310" stroke="#10B981" stroke-width="0.6" stroke-dasharray="4 6"/>
+            <line x1="0" y1="510" x2="420" y2="510" stroke="#06B6D4" stroke-width="0.6" stroke-dasharray="4 6"/>
 
-    <div class="card">
-      <div class="icon">📊</div>
-      <div>
-        <h3>Market Insights &amp; Analysis</h3>
-        <p>Real-time market updates and expert discussions</p>
-      </div>
-    </div>
+            <!-- Smooth Trend Curve -->
+            <path d="M-10 390 Q 75 340, 140 355 T 275 245 T 430 155" stroke="url(#emaGrad)" stroke-width="1.8" fill="none"/>
 
-    <div class="btn-wrap">
-      <a class="btn" href="https://t.me/+-VrsSbPb6uFlZjll" target="_blank" rel="noopener">
-        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="120" cy="120" r="120" fill="#fff"/>
-          <path fill="#0069d9" d="M54 118l115-47c5-2 10 1 8 9l-20 93c-1 7-6 9-12 5l-30-22-14 14c-2 2-3 3-6 3l2-31 56-51c3-2-1-4-4-2l-69 44-30-9c-6-2-6-6 2-9z"/>
+            <!-- Candlesticks -->
+            <g stroke="#10B981" stroke-width="1.2">
+                <line x1="38" y1="335" x2="38" y2="415"/>
+                <rect x="33" y="355" width="10" height="40" rx="2" fill="#10B981" fill-opacity="0.35"/>
+
+                <line x1="112" y1="295" x2="112" y2="380"/>
+                <rect x="107" y="312" width="10" height="46" rx="2" fill="#10B981" fill-opacity="0.4"/>
+
+                <line x1="186" y1="245" x2="186" y2="335"/>
+                <rect x="181" y="262" width="10" height="52" rx="2" fill="#10B981" fill-opacity="0.45"/>
+
+                <line x1="298" y1="185" x2="298" y2="270"/>
+                <rect x="293" y="202" width="10" height="48" rx="2" fill="#10B981" fill-opacity="0.5"/>
+
+                <line x1="372" y1="130" x2="372" y2="220"/>
+                <rect x="367" y="148" width="10" height="50" rx="2" fill="#10B981" fill-opacity="0.5"/>
+            </g>
+
+            <!-- Pullback Red/Cyan Candles -->
+            <g stroke="#06B6D4" stroke-width="1.2">
+                <line x1="75" y1="340" x2="75" y2="405"/>
+                <rect x="70" y="355" width="10" height="32" rx="2" fill="#06B6D4" fill-opacity="0.28"/>
+
+                <line x1="149" y1="295" x2="149" y2="365"/>
+                <rect x="144" y="310" width="10" height="36" rx="2" fill="#06B6D4" fill-opacity="0.28"/>
+
+                <line x1="242" y1="230" x2="242" y2="305"/>
+                <rect x="237" y="248" width="10" height="38" rx="2" fill="#06B6D4" fill-opacity="0.3"/>
+
+                <line x1="335" y1="175" x2="335" y2="250"/>
+                <rect x="330" y="192" width="10" height="36" rx="2" fill="#06B6D4" fill-opacity="0.3"/>
+            </g>
+
+            <defs>
+                <linearGradient id="emaGrad" x1="0" y1="390" x2="430" y2="155" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.4"/>
+                    <stop offset="50%" stop-color="#10B981" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.9"/>
+                </linearGradient>
+            </defs>
         </svg>
-        JOIN NOW TELEGRAM
-      </a>
     </div>
 
-    <div class="card">
-      <div class="icon">📚</div>
-      <div>
-        <h3>Learn Trading Strategies</h3>
-        <p>Investment | Share Market | Trading guidance</p>
-      </div>
+    <!-- Main Container (Optimized for 360px-430px Above-The-Fold Mobile Viewports) -->
+    <main class="relative z-10 w-full max-w-md sm:max-w-lg mx-auto px-3.5 sm:px-5 pt-3 pb-5 sm:py-6 flex-grow flex flex-col">
+
+        <!-- TOP MICRO-STATUS BAR PILL -->
+        <div class="flex justify-center mb-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/35 shadow-[0_0_20px_rgba(16,185,129,0.18)] backdrop-blur-md">
+                <span class="relative flex h-2 w-2 flex-shrink-0">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                </span>
+                <span class="font-mono text-[10px] sm:text-[11px] font-semibold tracking-wider text-emerald-300 uppercase">
+                    ● LIVE MARKET EDUCATION • FREE ACCESS
+                </span>
+            </div>
+        </div>
+
+        <!-- COMPACT ABOVE-THE-FOLD NEO-GLASSMORPHIC HERO CARD -->
+        <section aria-label="Channel Overview & Telegram Access" class="w-full neo-glass border border-emerald-500/25 rounded-3xl p-4 sm:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.65)] relative overflow-hidden mb-4">
+            <!-- Top Edge Cyber Accent Highlight -->
+            <div class="absolute inset-x-8 top-0 h-[1.5px] bg-gradient-to-r from-transparent via-emerald-400 to-transparent opacity-80"></div>
+
+            <!-- Centered Compact Profile Header -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Circular 76px Avatar with Glowing Dual-Tone Emerald/Cyan Border Ring -->
+                <div class="relative mb-3">
+                    <div class="w-[76px] h-[76px] rounded-full p-[2.5px] bg-gradient-to-tr from-emerald-400 via-cyan-400 to-emerald-500 animate-ring-pulse">
+                        <img
+                            src="https://iili.io/oH9MBrQ.jpg"
+                            alt="𝐆𝐀𝐔𝐓𝐀𝐌 𝐊𝐔𝐌𝐀𝐑 𝐉𝐇𝐀 𝐒𝐓𝐎𝐂𝐊 𝐋𝐄𝐀𝐑𝐍𝐄𝐑𝐒 ❤️💹 Logo"
+                            loading="eager"
+                            decoding="async"
+                            onerror="this.onerror=null; this.src='https://placehold.co/160x160/060913/10B981?text=GKJ';"
+                            class="w-full h-full object-cover rounded-full border-2 border-[#060913] bg-[#060913]"
+                        >
+                    </div>
+                    <!-- Terminal Verified Badge -->
+                    <span class="absolute -bottom-0.5 -right-0.5 flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-tr from-emerald-500 to-cyan-500 border-2 border-[#060913] shadow-lg" title="Official Educational Channel">
+                        <svg class="w-3.5 h-3.5 text-[#060913]" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Channel Name -->
+                <h1 class="font-display text-base sm:text-xl font-bold text-white tracking-tight leading-snug break-words max-w-full px-1">
+                    𝐆𝐀𝐔𝐓𝐀𝐌 𝐊𝐔𝐌𝐀𝐑 𝐉𝐇𝐀 𝐒𝐓𝐎𝐂𝐊 𝐋𝐄𝐀𝐑𝐍𝐄𝐑𝐒 ❤️💹
+                </h1>
+
+                <!-- Technical Monospace Tag -->
+                <div class="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-cyan-500/10 border border-cyan-400/25">
+                    <span class="font-mono text-[10px] font-medium text-cyan-300 tracking-wider uppercase">
+                        SYS://EDUCATIONAL_TERMINAL_V2
+                    </span>
+                </div>
+
+                <!-- Policy-Safe Main Headline -->
+                <h2 class="font-display text-[19px] sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-emerald-200 leading-tight mt-3">
+                    Master Price Action, Chart Structure &amp; Disciplined Risk Management
+                </h2>
+
+                <!-- Concise Subheadline -->
+                <p class="text-xs sm:text-sm text-slate-300/90 mt-2 leading-relaxed max-w-md">
+                    Join our educational community for daily index breakdowns, technical chart studies, and structured market psychology.
+                </p>
+
+                <!-- SINGLE PRIMARY HERO CTA BUTTON (Manual Event Tracking via Meta Event Setup Tool) -->
+                <div class="w-full mt-4">
+                    <a
+                        id="telegram-cta-btn"
+                        href="https://t.me/+y8-67bjG0BUyNTg1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="group relative overflow-hidden w-full min-h-[54px] sm:min-h-[58px] flex items-center justify-center gap-2.5 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:brightness-110 text-[#041014] font-display font-bold text-sm sm:text-base tracking-wide py-3.5 px-5 rounded-2xl shadow-[0_10px_30px_rgba(16,185,129,0.38)] transition-all duration-150 transform active:scale-95 focus:outline-none focus:ring-4 focus:ring-emerald-400/40 touch-manipulation select-none"
+                    >
+                        <!-- Animated Shimmer Sweep -->
+                        <span aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-transparent via-white/45 to-transparent animate-shimmer"></span>
+
+                        <!-- Official Telegram Paper-Plane SVG Icon -->
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current flex-shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        <span class="relative z-10">JOIN FREE TELEGRAM CHANNEL</span>
+                    </a>
+
+                    <!-- Micro-Caption Below CTA -->
+                    <p class="mt-2 font-mono text-[10px] sm:text-[11px] text-slate-400 tracking-tight">
+                        100% Free Educational Updates • Instant Telegram Access
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULAR 3-PILLAR CURRICULUM & DAILY INSIGHTS SECTION -->
+        <section aria-label="Curriculum & Daily Insights" class="w-full space-y-3 mb-2">
+            <!-- Section Header -->
+            <div class="flex items-center justify-between px-1">
+                <span class="font-mono text-[11px] font-semibold uppercase tracking-widest text-emerald-400">
+                    CURRICULUM &amp; DAILY INSIGHTS
+                </span>
+                <span class="font-mono text-[10px] text-slate-500">
+                    [03 MODULES]
+                </span>
+            </div>
+
+            <!-- Pillar 01 -->
+            <article class="neo-glass-sub border border-slate-800/90 border-l-4 border-l-emerald-400 rounded-2xl p-4 shadow-lg text-left transition-colors hover:border-emerald-500/35">
+                <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold tracking-wider text-emerald-400">
+                        01 // PRICE ACTION &amp; STRUCTURE
+                    </span>
+                    <span class="font-mono text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+                        CHARTING
+                    </span>
+                </div>
+                <p class="text-xs sm:text-[13px] text-slate-300 leading-relaxed mt-1">
+                    Pure naked-chart reading, support/resistance zones, and institutional liquidity concepts.
+                </p>
+            </article>
+
+            <!-- Pillar 02 -->
+            <article class="neo-glass-sub border border-slate-800/90 border-l-4 border-l-cyan-400 rounded-2xl p-4 shadow-lg text-left transition-colors hover:border-cyan-500/35">
+                <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold tracking-wider text-cyan-400">
+                        02 // INDEX &amp; SECTOR ANALYSIS
+                    </span>
+                    <span class="font-mono text-[10px] px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
+                        CASE STUDY
+                    </span>
+                </div>
+                <p class="text-xs sm:text-[13px] text-slate-300 leading-relaxed mt-1">
+                    Pre-market &amp; post-market Nifty/BankNifty technical levels strictly for educational case studies.
+                </p>
+            </article>
+
+            <!-- Pillar 03 -->
+            <article class="neo-glass-sub border border-slate-800/90 border-l-4 border-l-teal-400 rounded-2xl p-4 shadow-lg text-left transition-colors hover:border-teal-500/35">
+                <div class="flex items-center justify-between mb-1">
+                    <span class="font-mono text-xs font-bold tracking-wider text-teal-300">
+                        03 // RISK &amp; PSYCHOLOGY
+                    </span>
+                    <span class="font-mono text-[10px] px-2 py-0.5 rounded bg-teal-500/10 text-teal-300 border border-teal-500/20">
+                        DISCIPLINE
+                    </span>
+                </div>
+                <p class="text-xs sm:text-[13px] text-slate-300 leading-relaxed mt-1">
+                    Position sizing frameworks, capital preservation rules, and emotional discipline for learners.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- META ADS & SEBI COMPLIANCE FOOTER -->
+    <footer class="relative z-10 w-full bg-[#04070F]/95 border-t border-slate-800/80 py-4 px-3.5 sm:px-5 backdrop-blur-md">
+        <div class="max-w-md sm:max-w-lg mx-auto space-y-3">
+
+            <!-- Prominent SEBI & Risk Disclaimer Card -->
+            <div class="bg-[#090F1E] border border-amber-500/35 rounded-2xl p-3.5 text-left shadow-inner">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                    <svg class="w-4 h-4 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                    </svg>
+                    <span class="font-mono text-[11px] font-bold text-amber-400 uppercase tracking-wider">
+                        SEBI &amp; Risk Disclaimer
+                    </span>
+                </div>
+                <p class="text-[11px] text-slate-300/90 leading-relaxed">
+                    <strong class="text-white">Disclaimer:</strong> This community is strictly for educational and informational purposes only. We are <strong class="text-white">not SEBI-registered</strong> investment advisors or research analysts. Trading and investing in the stock market involve substantial financial risk. Past educational case studies do not guarantee future results. Always consult a certified financial advisor before making any investment decisions.
+                </p>
+            </div>
+
+            <!-- Interactive In-Page Modal Triggers (Buttons Only - Zero Extra External Links) -->
+            <div class="flex items-center justify-center gap-4 text-[11px] text-slate-400">
+                <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-emerald-400 underline underline-offset-2 transition-colors py-1 px-2 cursor-pointer">
+                    Privacy Policy
+                </button>
+                <span class="text-slate-700">&bull;</span>
+                <button type="button" onclick="openPolicyModal('terms')" class="hover:text-cyan-400 underline underline-offset-2 transition-colors py-1 px-2 cursor-pointer">
+                    Terms of Service
+                </button>
+            </div>
+
+            <!-- Copyright & Agency Attribution at Very Bottom -->
+            <div class="text-center text-[11px] text-slate-500 leading-normal space-y-1.5 pt-0.5">
+                <p>
+                    &copy; <span id="current-year"></span> 𝐆𝐀𝐔𝐓𝐀𝐌 𝐊𝐔𝐌𝐀𝐑 𝐉𝐇𝐀 𝐒𝐓𝐎𝐂𝐊 𝐋𝐄𝐀𝐑𝐍𝐄𝐑𝐒. All Rights Reserved.
+                </p>
+                <p class="text-slate-400 font-medium">
+                    Promoted By <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-cyan-300 underline underline-offset-2 font-semibold transition-colors">AD BUILD AGENCY</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- IN-PAGE POLICY MODAL (Privacy Policy & Terms of Service) -->
+    <div id="policy-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title">
+        <div class="neo-glass border border-emerald-500/30 rounded-2xl max-w-md w-full p-5 shadow-2xl text-left relative">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+                <h3 id="policy-modal-title" class="font-display font-bold text-white text-base">Privacy Policy</h3>
+                <button type="button" onclick="closePolicyModal()" class="text-slate-400 hover:text-white p-1.5 rounded-lg bg-slate-900/90 border border-slate-800 transition-colors cursor-pointer" aria-label="Close modal">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="policy-modal-body" class="text-xs text-slate-300 leading-relaxed space-y-2.5 max-h-[60vh] overflow-y-auto pr-1">
+                <!-- Populated dynamically via JS -->
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 flex justify-end">
+                <button type="button" onclick="closePolicyModal()" class="bg-gradient-to-r from-emerald-500 to-cyan-500 text-[#041014] font-display font-bold text-xs px-4 py-2 rounded-xl transition-opacity hover:opacity-90 cursor-pointer">
+                    Close
+                </button>
+            </div>
+        </div>
     </div>
 
-    <div class="gap"></div>
+    <!-- Minimal Script for Dynamic Year & In-Page Modals (Zero Automatic Click/Lead Event Listeners) -->
+    <script>
+        const POLICY_CONTENT = {
+            privacy: `
+                <p><strong class="text-white">1. Data &amp; Analytics:</strong> This landing page does not collect personal form inputs, phone numbers, or payment credentials. Standard anonymous analytics (Meta Pixel PageView) may be used to evaluate aggregate advertising reach.</p>
+                <p><strong class="text-white">2. External Platform Notice:</strong> Selecting the primary Telegram button redirects you to the official Telegram application/website, which operates independently under Telegram's Privacy Policy.</p>
+                <p><strong class="text-white">3. Educational Scope:</strong> 𝐆𝐀𝐔𝐓𝐀𝐌 𝐊𝐔𝐌𝐀𝐑 𝐉𝐇𝐀 𝐒𝐓𝐎𝐂𝐊 𝐋𝐄𝐀𝐑𝐍𝐄𝐑𝐒 ❤️💹 shares chart structure and technical analysis lessons strictly for educational learning.</p>
+            `,
+            terms: `
+                <p><strong class="text-white">1. Strictly Educational Purpose:</strong> All market breakdowns, index case studies, and risk management concepts shared by 𝐆𝐀𝐔𝐓𝐀𝐌 𝐊𝐔𝐌𝐀𝐑 𝐉𝐇𝐀 𝐒𝐓𝐎𝐂𝐊 𝐋𝐄𝐀𝐑𝐍𝐄𝐑𝐒 ❤️💹 are provided solely for educational and informational purposes.</p>
+                <p><strong class="text-white">2. Non-SEBI Registered Status:</strong> We are not SEBI-registered investment advisors or research analysts. Nothing shared constitutes investment advice, buy/sell tips, or guaranteed returns.</p>
+                <p><strong class="text-white">3. Risk Disclosure:</strong> Stock market trading and investments carry substantial financial risk. Past educational case studies do not guarantee future results. Always consult a certified financial advisor before making investment decisions.</p>
+            `
+        };
 
-    <div class="card">
-      <div class="icon">🛡️</div>
-      <div>
-        <h3>Practical Tips &amp; Tricks</h3>
-        <p>Actionable strategies and proven methods</p>
-      </div>
-    </div>
+        function openPolicyModal(type) {
+            const modal = document.getElementById('policy-modal');
+            const titleEl = document.getElementById('policy-modal-title');
+            const bodyEl = document.getElementById('policy-modal-body');
+            if (!modal || !titleEl || !bodyEl) return;
 
-    <p class="disclaimer">
-      Disclaimer: This content is for educational purposes only and does not constitute financial advice. Trading involves risk. Please do your own research before making investment decisions.
-    </p>
+            titleEl.textContent = type === 'privacy' ? 'Privacy Policy' : 'Terms of Service';
+            bodyEl.innerHTML = POLICY_CONTENT[type] || '';
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
 
-  </div>
+        function closePolicyModal() {
+            const modal = document.getElementById('policy-modal');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('current-year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+
+            const modal = document.getElementById('policy-modal');
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closePolicyModal();
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closePolicyModal();
+            });
+        });
+    </script>
 </body>
+ 
 </html>
